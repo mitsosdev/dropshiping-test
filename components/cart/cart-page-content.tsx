@@ -7,30 +7,13 @@ import { cn } from "@/lib/general/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import {
   ShoppingCart,
   Trash2,
   Plus,
   Minus,
-  Package,
-  UtensilsCrossed,
-  Lamp,
-  Zap,
 } from "lucide-react";
-
-const categoryGradients: Record<string, string> = {
-  kitchen: "from-teal-500/80 to-teal-700/80",
-  lifestyle: "from-orange-400/80 to-teal-500/80",
-  tech: "from-teal-400/80 to-orange-500/80",
-  home: "from-orange-500/80 to-teal-600/80",
-};
-
-const categoryIcons: Record<string, React.ReactNode> = {
-  kitchen: <UtensilsCrossed className="h-6 w-6" />,
-  lifestyle: <Lamp className="h-6 w-6" />,
-  tech: <Zap className="h-6 w-6" />,
-  home: <Package className="h-6 w-6" />,
-};
 
 const FREE_SHIPPING_THRESHOLD = 30;
 const SHIPPING_COST = 3.5;
@@ -60,7 +43,7 @@ export function CartPageContent() {
         </p>
         <Button
           asChild
-          className="bg-teal-600 text-white hover:bg-teal-700 transition-colors duration-300"
+          className="bg-terracotta text-white hover:bg-terracotta/90 transition-colors duration-300"
         >
           <Link href="/products">{t("continueShopping")}</Link>
         </Button>
@@ -77,27 +60,28 @@ export function CartPageContent() {
         <div className="lg:col-span-2">
           <div className="flex flex-col gap-0">
             {items.map((item, index) => {
-              const gradient =
-                categoryGradients[item.product.category] ??
-                "from-teal-500/80 to-orange-500/80";
-              const icon =
-                categoryIcons[item.product.category] ?? (
-                  <Package className="h-6 w-6" />
-                );
               const name = tProducts(`${item.product.slug}.name`);
+              const image = item.product.images[0];
               const lineTotal = item.product.price * item.quantity;
 
               return (
                 <div key={item.product.id}>
                   <div className="flex items-center gap-4 py-4">
-                    {/* Gradient placeholder image */}
-                    <div
-                      className={cn(
-                        "flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-linear-to-br",
-                        gradient
+                    {/* Product image */}
+                    <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg bg-sand">
+                      {image ? (
+                        <Image
+                          src={image}
+                          alt={name}
+                          fill
+                          className="object-cover"
+                          sizes="80px"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center text-muted-foreground">
+                          <ShoppingCart className="h-6 w-6" />
+                        </div>
                       )}
-                    >
-                      <div className="text-white/90">{icon}</div>
                     </div>
 
                     {/* Product info */}
@@ -105,7 +89,7 @@ export function CartPageContent() {
                       <div className="flex flex-col gap-1">
                         <Link
                           href={`/products/${item.product.slug}`}
-                          className="font-semibold text-foreground transition-colors duration-300 hover:text-teal-600"
+                          className="font-semibold text-foreground transition-colors duration-300 hover:text-terracotta"
                         >
                           {name}
                         </Link>
@@ -206,14 +190,14 @@ export function CartPageContent() {
               <Separator />
               <div className="flex items-center justify-between">
                 <span className="text-lg font-bold">{t("total")}</span>
-                <span className="text-lg font-bold text-teal-600">
+                <span className="text-lg font-bold text-terracotta">
                   {tCommon("currency")}
                   {total.toFixed(2)}
                 </span>
               </div>
               <Button
                 asChild
-                className="mt-2 w-full bg-teal-600 text-white hover:bg-teal-700 transition-colors duration-300"
+                className="mt-2 w-full bg-terracotta text-white hover:bg-terracotta/90 transition-colors duration-300"
                 disabled={items.length === 0}
               >
                 <Link href="/checkout">{t("checkout")}</Link>

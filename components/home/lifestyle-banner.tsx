@@ -8,7 +8,7 @@ export function LifestyleBanner() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative bg-background overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left - Image */}
         <div className="relative h-[400px] md:h-[500px]">
