@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/general/utils";
 import { NestioLogo } from "@/components/nestio-logo";
+import { MusicPlayer } from "@/components/music-player";
 
 const navLinks = [
   { href: "/products" as const, key: "products" as const },
@@ -71,6 +72,8 @@ export function Navbar() {
             {locale === "en" ? "EL" : "EN"}
           </button>
 
+          <MusicPlayer />
+
           <div className="mx-1 h-4 w-px bg-border" />
 
           <Link href="/cart" className="relative group">
@@ -85,6 +88,7 @@ export function Navbar() {
 
         {/* Mobile right actions */}
         <div className="flex items-center gap-2 md:hidden">
+          <MusicPlayer />
           <Link href="/cart" className="relative">
             <ShoppingCart className="size-[18px] text-muted-foreground" />
             {itemCount > 0 && (
