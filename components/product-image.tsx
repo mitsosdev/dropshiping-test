@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/general/utils";
 import { Product } from "@/types/product";
-import { Package, UtensilsCrossed, Lamp, Zap, LayoutGrid } from "lucide-react";
+import { Package, UtensilsCrossed, Lamp, Zap, LayoutGrid, Heart } from "lucide-react";
 
 const categoryIcons = {
   kitchen: UtensilsCrossed,
@@ -12,6 +12,7 @@ const categoryIcons = {
   tech: Zap,
   organization: LayoutGrid,
   home: Package,
+  wellness: Heart,
 } as const;
 
 const sizeConfig = {

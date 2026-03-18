@@ -27,29 +27,8 @@
       "kitchen": "Kitchen",
       "lifestyle": "Lifestyle",
       "tech": "Tech",
-      "organization": "Organization"
-    },
-    "stove-gap-covers": {
-      "name": "Silicone Stove Gap Covers",
-      "shortDescription": "Stop crumbs and liquids from falling into the gap between your stove and countertop",
-      "description": "Say goodbye to the frustrating gap between your stove and countertop. These flexible silicone covers create a seamless barrier that prevents crumbs, spills, and debris from falling into that hard-to-clean space. Heat-resistant, easy to clean, and designed to fit most standard stoves. Simply trim to size and enjoy a cleaner kitchen instantly.",
-      "features": [
-        "Heat-resistant silicone up to 230°C",
-        "Flexible design fits gaps from 1-3 cm",
-        "Easy to remove and wash",
-        "Set of 2 covers included"
-      ]
-    },
-    "rotating-snack-tray": {
-      "name": "360° Rotating Snack Tray",
-      "shortDescription": "The ultimate party companion — a rotating tray with separate compartments for snacks and dips",
-      "description": "Elevate your hosting game with this clever rotating snack organizer. Featuring multiple compartments that spin 360°, everyone at the table can easily reach their favorite snacks. The removable inner trays make serving and cleanup a breeze. Perfect for movie nights, parties, and family gatherings. Made from food-safe BPA-free material.",
-      "features": [
-        "Smooth 360° rotation mechanism",
-        "5 removable compartments with lids",
-        "BPA-free food-safe material",
-        "Double-layer design for maximum capacity"
-      ]
+      "organization": "Organization",
+      "wellness": "Wellness"
     },
     "silicone-food-storage-bags": {
       "name": "Reusable Silicone Food Storage Bags",
@@ -82,17 +61,6 @@
         "Multiple color modes including warm sunset and rainbow",
         "USB powered — works with any USB port or power bank",
         "LED technology — cool to touch and energy efficient"
-      ]
-    },
-    "led-strip-lights": {
-      "name": "Smart RGB LED Strip Lights",
-      "shortDescription": "Add vibrant color to any space with app-controlled, music-syncing LED strips",
-      "description": "Transform your room into an immersive experience with these smart RGB LED strip lights. Control millions of colors from your phone, sync them to your music, or set timers and schedules. The strong adhesive backing makes installation a breeze on any surface — behind your TV, under your bed, around your desk, or along your ceiling. Cut to any length you need.",
-      "features": [
-        "5 meters of flexible LED strip",
-        "App control with 16 million colors",
-        "Music sync mode with built-in microphone",
-        "Cuttable every 3 LEDs for custom lengths"
       ]
     },
     "digital-meat-thermometer": {
@@ -227,26 +195,59 @@
         "Compact design — doesn't block other outlets"
       ]
     },
-    "stackable-fridge-organizer": {
-      "name": "Stackable Fridge Organizer (4-Pack)",
-      "shortDescription": "Maximize fridge space with clear stackable bins — see everything, waste nothing",
-      "description": "Take control of your fridge chaos with these transparent stackable organizer bins. Designed to fit perfectly in standard refrigerators, they keep fruits, vegetables, condiments, and leftovers neatly sorted and visible. The stackable design maximizes vertical space, while the built-in handles make it easy to pull bins out. BPA-free, freezer-safe, and dishwasher-safe. Set of 4 includes 2 large and 2 small bins.",
+    "volcanic-flame-diffuser": {
+      "name": "Volcanic Flame Aroma Diffuser",
+      "shortDescription": "A mesmerizing flame effect diffuser that doubles as a mood lamp — USB powered, essential oil ready",
+      "description": "Bring the ambiance of a volcanic flame to your desk or nightstand with this unique aroma diffuser. The realistic flame effect creates a warm, cozy atmosphere while dispersing your favorite essential oils throughout the room. USB powered and ultra-portable, it works anywhere — no candles, no fire, no mess. The 130ml water tank provides hours of continuous misting.",
       "features": [
-        "Set of 4 — 2 large + 2 small bins",
-        "Clear design — see contents at a glance",
-        "Stackable with built-in handles",
-        "BPA-free, freezer and dishwasher safe"
+        "Realistic volcanic flame LED effect",
+        "Essential oil compatible — aromatherapy ready",
+        "130ml water tank — hours of misting",
+        "USB powered — works with any power source"
       ]
     },
-    "cable-management-box": {
-      "name": "Cable Management Box",
-      "shortDescription": "Hide ugly cables and power strips in one elegant box — instant desk and room cleanup",
-      "description": "Say goodbye to tangled cables and messy power strips. This sleek cable management box hides everything inside while keeping ventilation slots for heat dissipation. The minimalist design blends with any decor, and the easy-access lid lets you plug and unplug without hassle. Perfect for desks, TV setups, and living rooms. Available in a neutral finish that complements any space.",
+    "neon-led-lamp": {
+      "name": "3D Neon LED Lamp",
+      "shortDescription": "Eye-catching acrylic LED lamp with 3D neon effect — perfect bedroom or desk decor",
+      "description": "Add a pop of personality to any room with this stunning 3D neon LED lamp. The acrylic panel creates a beautiful neon sign effect with vibrant colors that stand out in any setting. USB powered and energy efficient, it makes the perfect nightlight, desk accent, or Instagram-worthy room decor. Available in multiple designs to match your style.",
       "features": [
-        "Hides power strips and cables completely",
-        "Ventilation slots prevent overheating",
-        "Easy-access removable lid",
-        "Fits standard power strips up to 6 outlets"
+        "3D acrylic panel with neon glow effect",
+        "USB powered — energy efficient LED",
+        "Multiple design options available",
+        "Perfect for bedrooms, desks, and shelves"
+      ]
+    },
+    "phone-tablet-stand": {
+      "name": "360° Phone & Tablet Stand",
+      "shortDescription": "Adjustable metal stand for phones and tablets — perfect for desks, kitchens, and nightstands",
+      "description": "The ultimate hands-free solution for your phone or tablet. This premium metal stand features a 360° rotating head and adjustable height, so you can find the perfect viewing angle for video calls, recipe reading, streaming, or working. The weighted base keeps everything stable, while the non-slip silicone pads protect your device. Works with all phones and tablets up to 12.9 inches.",
+      "features": [
+        "360° rotating head with adjustable height",
+        "Premium metal construction — heavy and stable",
+        "Non-slip silicone pads protect your device",
+        "Compatible with all phones and tablets up to 12.9\""
+      ]
+    },
+    "posture-corrector": {
+      "name": "Smart Posture Corrector",
+      "shortDescription": "Intelligent posture training belt with real-time vibration alerts — improve your posture effortlessly",
+      "description": "Fix your posture without thinking about it. This smart posture corrector uses built-in sensors to detect when you're slouching and sends a gentle vibration reminder to straighten up. Unlike traditional braces, it trains your muscles to maintain good posture naturally over time. Adjustable straps fit all body types, and the slim design is invisible under clothing. USB rechargeable with a battery that lasts all day.",
+      "features": [
+        "Smart sensor with vibration reminder",
+        "Trains natural posture over time",
+        "Adjustable — fits all body types",
+        "USB rechargeable — lasts all day"
+      ]
+    },
+    "travel-electronics-organizer": {
+      "name": "Travel Electronics Organizer",
+      "shortDescription": "Keep all your cables, chargers, and gadgets perfectly organized in one waterproof bag",
+      "description": "Never dig through a tangled mess of cables again. This waterproof electronics organizer has dedicated pockets and elastic loops for every gadget you carry — chargers, cables, earbuds, power banks, USB drives, and more. The double-layer design maximizes space while keeping everything visible and accessible. Perfect for travel, commuting, or just keeping your desk drawer tidy.",
+      "features": [
+        "Waterproof exterior — protects your gear",
+        "Double-layer design with elastic loops",
+        "Fits chargers, cables, power banks, and more",
+        "Compact enough for any bag or backpack"
       ]
     }
   },
@@ -317,7 +318,7 @@
       "location": "Athens, Greece"
     },
     "review2": {
-      "text": "I ordered the rotating snack tray for a dinner party and everyone asked where I got it. Amazing quality for the price. Will definitely order again.",
+      "text": "I ordered the volcanic flame diffuser and it's absolutely stunning. The flame effect looks so real! Everyone who visits asks about it. Amazing quality for the price.",
       "name": "Dimitris P.",
       "location": "Thessaloniki, Greece"
     },
@@ -327,7 +328,7 @@
       "location": "Nicosia, Cyprus"
     },
     "review4": {
-      "text": "Ordered the cable management box and fridge organizers together. Both arrived in perfect condition. My home has never been this organized!",
+      "text": "The travel electronics organizer is a game changer. All my cables and chargers finally have a home. My desk has never been this clean!",
       "name": "Nikos A.",
       "location": "Heraklion, Greece"
     }
