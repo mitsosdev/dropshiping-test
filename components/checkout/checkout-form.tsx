@@ -78,9 +78,12 @@ export function CheckoutForm() {
         body: JSON.stringify({
           items: items.map((item) => ({
             id: item.product.id,
+            slug: item.product.slug,
             name: tProducts(`${item.product.slug}.name`),
             price: item.product.price,
             quantity: item.quantity,
+            cjProductId: item.product.cjProductId || "",
+            cjSku: item.product.cjSku || "",
           })),
           shipping,
         }),

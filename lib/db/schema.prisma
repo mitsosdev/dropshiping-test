@@ -39,3 +39,54 @@ model Todo {
   @@index([userId])
   @@map("todos")
 }
+
+enum OrderStatus {
+  PENDING
+  PAID
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+model Order {
+  id                    String      @id @default(cuid())
+  orderNumber           String      @unique
+  status                OrderStatus @default(PENDING)
+  customerName          String
+  customerEmail         String
+  customerPhone         String
+  shippingAddress       String
+  shippingCity          String
+  shippingPostalCode    String
+  shippingCountry       String
+  subtotal              Decimal     @db.Decimal(10, 2)
+  shippingCost          Decimal     @db.Decimal(10, 2)
+  total                 Decimal     @db.Decimal(10, 2)
+  stripeSessionId       String?     @unique
+  stripePaymentIntentId String?
+  cjOrderId             String?
+  trackingNumber        String?
+  notes                 String?
+  items                 OrderItem[]
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+
+  @@index([status])
+  @@index([customerEmail])
+}
+
+model OrderItem {
+  id            String   @id @default(cuid())
+  orderId       String
+  order         Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productSlug   String
+  productName   String
+  price         Decimal  @db.Decimal(10, 2)
+  quantity      Int
+  cjProductId   String?
+  cjSku         String?
+  createdAt     DateTime @default(now())
+
+  @@index([orderId])
+}
