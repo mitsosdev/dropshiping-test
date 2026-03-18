@@ -11,7 +11,7 @@ export function LifestyleBanner() {
     <section className="relative bg-background overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left - Image */}
-        <div className="relative h-[400px] md:h-[500px]">
+        <div className="relative h-[280px] sm:h-[350px] md:h-[500px]">
           <img
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=960&q=80&auto=format&fit=crop"
             alt="Modern home interior"
@@ -20,12 +20,12 @@ export function LifestyleBanner() {
         </div>
 
         {/* Right - Content */}
-        <div className="flex items-center bg-sand px-8 py-16 md:px-16 md:py-0">
+        <div className="flex items-center bg-sand px-6 py-12 sm:py-16 md:px-16 md:py-0">
           <div className="max-w-sm">
             <p className="mb-4 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
               {t("label")}
             </p>
-            <h2 className="font-serif text-3xl font-semibold leading-tight text-charcoal md:text-4xl">
+            <h2 className="font-serif text-2xl font-semibold leading-tight text-charcoal sm:text-3xl md:text-4xl">
               {t("subtitle")}
             </h2>
             <div className="mt-8">

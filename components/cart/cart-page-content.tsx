@@ -53,7 +53,7 @@ export function CartPageContent() {
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
-      <h1 className="mb-8 text-3xl font-bold text-foreground">{t("title")}</h1>
+      <h1 className="mb-6 text-2xl font-bold text-foreground sm:mb-8 sm:text-3xl">{t("title")}</h1>
 
       <div className="grid gap-8 lg:grid-cols-3">
         {/* Left: Cart items */}
@@ -66,9 +66,9 @@ export function CartPageContent() {
 
               return (
                 <div key={item.product.id}>
-                  <div className="flex items-center gap-4 py-4">
+                  <div className="flex items-start gap-3 py-4 sm:items-center sm:gap-4">
                     {/* Product image */}
-                    <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg bg-sand">
+                    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-sand sm:h-20 sm:w-20">
                       {image ? (
                         <Image
                           src={image}
@@ -85,7 +85,7 @@ export function CartPageContent() {
                     </div>
 
                     {/* Product info */}
-                    <div className="flex flex-1 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex flex-1 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between min-w-0">
                       <div className="flex flex-col gap-1">
                         <Link
                           href={`/products/${item.product.slug}`}
@@ -140,10 +140,10 @@ export function CartPageContent() {
                         {/* Remove button */}
                         <button
                           onClick={() => removeItem(item.product.id)}
-                          className="text-muted-foreground transition-colors duration-300 hover:text-red-500"
+                          className="p-1.5 -m-1.5 text-muted-foreground transition-colors duration-300 hover:text-red-500"
                           aria-label={t("remove")}
                         >
-                          <Trash2 className="h-4.5 w-4.5" />
+                          <Trash2 className="h-4 w-4 sm:h-4.5 sm:w-4.5" />
                         </button>
                       </div>
                     </div>

@@ -22,7 +22,7 @@ const ContactPage = async ({ params }: BasePageProps) => {
           <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
             {t("label")}
           </p>
-          <h1 className="font-serif text-4xl font-semibold text-charcoal md:text-5xl">
+          <h1 className="font-serif text-3xl font-semibold text-charcoal sm:text-4xl md:text-5xl">
             {t("title")}
           </h1>
           <p className="mt-4 text-[15px] font-light text-warm-gray">
@@ -31,7 +31,7 @@ const ContactPage = async ({ params }: BasePageProps) => {
         </div>
 
         {/* Two column layout */}
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-10 sm:gap-12 lg:grid-cols-5 lg:gap-16">
           {/* Left - Contact info */}
           <div className="lg:col-span-2">
             <div className="space-y-8">

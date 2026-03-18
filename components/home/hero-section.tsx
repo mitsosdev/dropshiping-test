@@ -8,9 +8,9 @@ export function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="min-h-[85vh] flex items-stretch overflow-hidden">
+    <section className="min-h-[80vh] sm:min-h-[85vh] flex items-stretch overflow-hidden">
       {/* Left - Content on solid cream */}
-      <div className="flex w-full items-center bg-cream px-6 py-20 md:w-1/2 lg:px-16">
+      <div className="flex w-full items-center bg-cream px-5 py-16 sm:px-6 sm:py-20 md:w-1/2 lg:px-16">
         <div className="mx-auto max-w-lg">
           {/* Small label */}
           <p className="mb-6 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
@@ -18,7 +18,7 @@ export function HeroSection() {
           </p>
 
           {/* Main heading - large serif */}
-          <h1 className="font-serif text-5xl font-semibold leading-[1.1] text-charcoal sm:text-6xl lg:text-7xl">
+          <h1 className="font-serif text-[2.25rem] font-semibold leading-[1.1] text-charcoal sm:text-5xl md:text-6xl lg:text-7xl">
             {t("title")}
           </h1>
 

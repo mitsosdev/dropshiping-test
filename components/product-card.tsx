@@ -31,26 +31,26 @@ export function ProductCard({ product }: ProductCardProps) {
       </Link>
 
       {/* Product info - minimal */}
-      <div className="mt-5 space-y-2">
+      <div className="mt-3 space-y-1.5 sm:mt-5 sm:space-y-2">
         <Link href={`/products/${product.slug}`}>
-          <h3 className="font-serif text-lg font-medium text-foreground transition-colors duration-300 group-hover:text-terracotta">
+          <h3 className="font-serif text-sm font-medium text-foreground transition-colors duration-300 group-hover:text-terracotta sm:text-lg">
             {name}
           </h3>
         </Link>
 
-        <p className="line-clamp-2 text-[13px] font-light leading-relaxed text-warm-gray">
+        <p className="hidden line-clamp-2 text-[13px] font-light leading-relaxed text-warm-gray sm:block">
           {shortDescription}
         </p>
 
-        <div className="flex items-center justify-between pt-3">
-          <span className="text-base font-medium tracking-wide text-foreground">
+        <div className="flex items-center justify-between pt-1.5 sm:pt-3">
+          <span className="text-sm font-medium tracking-wide text-foreground sm:text-base">
             {tCommon("currency")}
             {product.price.toFixed(2)}
           </span>
 
           {product.inStock ? (
             <button
-              className="flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.15em] text-muted-foreground transition-colors duration-300 hover:text-terracotta"
+              className="flex items-center gap-1 text-[10px] font-medium uppercase tracking-[0.1em] text-muted-foreground transition-colors duration-300 hover:text-terracotta sm:gap-2 sm:text-[12px] sm:tracking-[0.15em]"
               onClick={() => addItem(product)}
             >
               <ShoppingCart className="size-[14px]" />

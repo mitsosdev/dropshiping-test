@@ -32,10 +32,10 @@ export function ReviewsSection() {
   const t = useTranslations("Reviews");
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-14 sm:py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Section header - editorial style matching FeaturedProducts */}
-        <div className="mb-16 text-center">
+        <div className="mb-10 sm:mb-16 text-center">
           <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
             {t("label")}
           </p>
@@ -50,9 +50,9 @@ export function ReviewsSection() {
           {reviews.map(({ key, rating }) => (
             <div
               key={key}
-              className="group relative rounded-sm border border-border/40 bg-cream p-8 transition-all duration-300 hover:border-terracotta/20 hover:shadow-sm"
+              className="group relative rounded-sm border border-border/40 bg-cream p-5 sm:p-8 transition-all duration-300 hover:border-terracotta/20 hover:shadow-sm"
             >
-              <Quote className="absolute right-6 top-6 size-8 text-sand" strokeWidth={1} />
+              <Quote className="absolute right-4 top-4 size-6 text-sand sm:right-6 sm:top-6 sm:size-8" strokeWidth={1} />
 
               <Stars count={rating} />
 

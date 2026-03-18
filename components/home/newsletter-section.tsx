@@ -18,7 +18,7 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="bg-charcoal py-20 md:py-24">
+    <section className="bg-charcoal py-14 sm:py-20 md:py-24">
       <div className="mx-auto max-w-xl px-6 text-center lg:px-8">
         <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
           {t("label")}
@@ -38,7 +38,7 @@ export function NewsletterSection() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-10">
-            <div className="flex gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row">
               <input
                 type="email"
                 required
@@ -49,9 +49,9 @@ export function NewsletterSection() {
               />
               <button
                 type="submit"
-                className="group flex items-center gap-2 bg-terracotta px-6 py-3.5 text-[12px] font-medium uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-terracotta/90"
+                className="group flex items-center justify-center gap-2 bg-terracotta px-6 py-3.5 text-[12px] font-medium uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-terracotta/90"
               >
-                <span className="hidden sm:inline">{t("button")}</span>
+                <span>{t("button")}</span>
                 <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
               </button>
             </div>

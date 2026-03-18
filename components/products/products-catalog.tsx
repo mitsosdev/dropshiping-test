@@ -20,8 +20,8 @@ export function ProductsCatalog() {
       : allProducts.filter((p) => p.category === activeCategory);
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="mb-8 text-center font-serif text-3xl font-semibold text-charcoal sm:text-4xl">
+    <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
+      <h1 className="mb-6 text-center font-serif text-2xl font-semibold text-charcoal sm:mb-8 sm:text-3xl md:text-4xl">
         {t("title")}
       </h1>
 
@@ -46,7 +46,7 @@ export function ProductsCatalog() {
       </div>
 
       {/* Product grid */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
         {filteredProducts.map((product) => (
           <div
             key={product.id}

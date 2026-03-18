@@ -13,9 +13,9 @@ export function WhyNestio() {
   const t = useTranslations("WhyNestio");
 
   return (
-    <section className="border-t border-border/40 py-20 md:py-28">
+    <section className="border-t border-border/40 py-14 sm:py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-start gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left - Heading */}
           <div>
             <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
